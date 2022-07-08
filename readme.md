@@ -4,6 +4,8 @@ This project repository: [Assignment 2](https://github.com/farlhmd/Assignment2AP
 
 This automation tested API from: https://jsonplaceholder.typicode.com
 
+Automated with: [Katalon Studio](https://katalon.com)
+
 The end-points are:
 ```
 /posts
@@ -31,7 +33,7 @@ The end-points are:
 /users/$id/posts
 ```
 
-Automated with: [Katalon Studio](https://katalon.com)
+
 
 ## Running Automation Test with Katalon Studio
 
