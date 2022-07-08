@@ -15,7 +15,7 @@
       <guid>ead51e6e-4c07-4588-8db9-025e08de663a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EP_Albums/Get - all Albums and verify</testCaseId>
+      <testCaseId>Test Cases/Albums/Get - all Albums and verify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

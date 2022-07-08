@@ -15,21 +15,21 @@
       <guid>088aa16b-419b-49a8-ae0d-9b9119e5af2f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EP_Albums/Check total index</testCaseId>
+      <testCaseId>Test Cases/Albums/Check total index</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3f6faec2-9f88-4517-af0b-3d75b26d28d2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EP_Albums/Get - all Albums and verify</testCaseId>
+      <testCaseId>Test Cases/Albums/Get - all Albums and verify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5f7c5e93-b97a-4c3e-b42c-56325b143f38</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EP_Albums/Get - Album by id</testCaseId>
+      <testCaseId>Test Cases/Albums/Get - Album by id</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
