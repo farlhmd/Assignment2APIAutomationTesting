@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - all Albums and verify</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20d5f1c7-e8ac-4696-9f78-aeb9f2309486</testCaseGuid>
+</TestCaseEntity>
