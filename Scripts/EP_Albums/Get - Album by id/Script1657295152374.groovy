@@ -32,24 +32,24 @@ int total = 0
 int userId = 1
 
 while (i < max) {
-    idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
+    idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i, FailureHandling.OPTIONAL)
 
     userIdVerified = WS.verifyElementPropertyValue(response, "[$i].userId", userId, FailureHandling.OPTIONAL)
 
     if (idVerified == true) {
         WS.comment("Id value with index $i is verified")
 
-        if (userId == true) {
-            i++
+        if (userId == false) {
+            WS.comment("User Id value with index $i is invalid")
+        }
+		WS.comment("User Id value with index $i is valid")
+        i++
 
-            total = i
+        total = i
 
-            if ((i % 10) == 0) {
-                userId += 1
-            }
-        } else {
-			WS.comment("User Id value with index $i is invalid")
-		}
+        if ((i % 10) == 0) {
+            userId += 1
+        }
     } else {
         WS.comment("Id value with index $i is invalid")
 
