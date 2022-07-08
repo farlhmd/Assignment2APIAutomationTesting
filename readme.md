@@ -1,5 +1,5 @@
 For a better experience on reading this, open from: [Github](https://github.com/farlhmd/Assignment2APIAutomationTesting)
-# Assignment 2 API Testing
+# Assignment 2 | API Testing
 This project repository: [Assignment 2](https://github.com/farlhmd/Assignment2APIAutomationTesting)
 
 This automation tested API from: https://jsonplaceholder.typicode.com
