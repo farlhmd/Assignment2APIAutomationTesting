@@ -48,6 +48,7 @@ while (i < max) {
         total = i
 
         if ((i % 10) == 0) {
+			WS.comment("Each user has 10 albums, so after 10 albums, the user will be changed")
             userId += 1
         }
     } else {
