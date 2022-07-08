@@ -42,7 +42,7 @@ while (i < max) {
         if (userId == false) {
             WS.comment("User Id value with index $i is invalid")
         }
-		WS.comment("User Id value with index $i is valid")
+		WS.comment("User Id value with index $i is verified")
         i++
 
         total = i
