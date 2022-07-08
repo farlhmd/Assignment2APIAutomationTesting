@@ -23,23 +23,40 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.comment('To check the userId and id is equal to what it should')
 
-int i = 0, max = 100, total = 0
+int i = 0
+
+int max = 100
+
+int total = 0
+
+int userId = 1
 
 while (i < max) {
     idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
 
+    userIdVerified = WS.verifyElementPropertyValue(response, "[$i].userId", userId, FailureHandling.OPTIONAL)
+
     if (idVerified == true) {
-        println("Id value with index $i is verified")
+        WS.comment("Id value with index $i is verified")
 
-        i++
-		total = i
+        if (userId == true) {
+            i++
+
+            total = i
+
+            if ((i % 10) == 0) {
+                userId += 1
+            }
+        } else {
+			WS.comment("User Id value with index $i is invalid")
+		}
     } else {
-        println("Id value with index $i is invalid")
+        WS.comment("Id value with index $i is invalid")
 
-		total = i
+        total = i
+
         i = max
     }
 }
 
 WS.comment("Completed get all albums by id, The total is: $total")
-
