@@ -32,7 +32,7 @@ int total = 0
 int userId = 1
 
 while (i < max) {
-    idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i, FailureHandling.OPTIONAL)
+    idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i+1, FailureHandling.OPTIONAL)
 
     userIdVerified = WS.verifyElementPropertyValue(response, "[$i].userId", userId, FailureHandling.OPTIONAL)
 
