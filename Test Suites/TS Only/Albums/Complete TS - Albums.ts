@@ -29,7 +29,7 @@
       <guid>5f7c5e93-b97a-4c3e-b42c-56325b143f38</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Albums/Get - Album by id</testCaseId>
+      <testCaseId>Test Cases/Albums/Get - Specific album by id</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
