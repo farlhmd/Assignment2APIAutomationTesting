@@ -26,12 +26,13 @@ WS.comment('To check the userId and id is equal to what it should')
 int i = 0
 
 while(i<100) {
-	idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i, FailureHandling.OPTIONAL)
+	idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
 	if (idVerified == true) {
 		println("Id value with index $i is verified")
 		i++
 	}else {
 		println("Id value with index $i is invalid")
 		i = 99
+		i++
 	}
  }
