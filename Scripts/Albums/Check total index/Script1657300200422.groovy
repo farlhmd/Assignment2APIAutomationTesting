@@ -16,15 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
+
 
 response = WS.sendRequest(findTestObject('EP_Albums/Get all Albums'))
+def slurper = new JsonSlurper()
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.comment('To check if there are 100 indexes of data')
-
-int i = 0
-while(i<100) {
+def result = slurper.parseText(response.getResponseBodyContent())
+total = 0
+WS.comment('To check all available indexes of data')
+for(int i=0; i < result.size(); i++) {
     WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
-	i++
+	total++
 }
+if(total > 0) {
+	WS.comment("Success retreived ($total) index(es).")
+} else {
+	WS.comment("Error fetching index")
+}
+
+
