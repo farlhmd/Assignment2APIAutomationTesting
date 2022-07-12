@@ -51,7 +51,7 @@ The end-points are:
 The test cases are devided by each endpoints:
 
 - Albums&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 7 Test Cases
-- Comments : Consist of 5 Test Cases
+- Comments &ensp;: Consist of 5 Test Cases
 - Photos&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 5 Test Cases
 - Posts&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 6 Test Cases
 - Todos&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 5 Test Cases
