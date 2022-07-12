@@ -1,6 +1,8 @@
 For a better experience on reading this, open from: [Github](https://github.com/farlhmd/Assignment2APIAutomationTesting)
 # Assignment 2 | API Testing
+
 This project repository: [Assignment 2](https://github.com/farlhmd/Assignment2APIAutomationTesting)
+
 
 This automation tested API from: https://jsonplaceholder.typicode.com
 
@@ -58,3 +60,10 @@ The test cases are devided by each endpoints:
 - Users&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 8 Test Cases
 
 ##### *Notes: These test cases are implementing loop to verify data from JSON Slurper
+
+### Other Automation Test Projects
+Don't forget to checkout another projects of mine:
+- [Final Project API](https://github.com/farlhmd/FinalAPIAutomationTesting)
+- [Final Project Mobile](https://github.com/farlhmd/FinalMobileAutomationTesting)
+- [Final Project Web](https://github.com/farlhmd/FinalWebAutomationTesting)
+- [Assignment 3 (Mobile Testing)](https://github.com/farlhmd/Assignment3MobileAutomationTesting)
