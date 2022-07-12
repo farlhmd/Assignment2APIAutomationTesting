@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Post - a Post</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8c88528-67a0-42a3-b25c-a5bf23b8c4c5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b7ee47d0-f309-45ad-a8fa-0ed157d15b7a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>23ccf2d7-9f9d-4746-ae34-044c0e6867f1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3414df70-ecd8-4964-996c-9112bdce1cb0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>44227f7c-1384-4038-a025-e4d4dbe879e4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>b7ee47d0-f309-45ad-a8fa-0ed157d15b7a</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variable>
+   <variable>
+      <defaultValue>'101'</defaultValue>
+      <description></description>
+      <id>23ccf2d7-9f9d-4746-ae34-044c0e6867f1</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is new Title'</defaultValue>
+      <description></description>
+      <id>3414df70-ecd8-4964-996c-9112bdce1cb0</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is new Body'</defaultValue>
+      <description></description>
+      <id>44227f7c-1384-4038-a025-e4d4dbe879e4</id>
+      <masked>false</masked>
+      <name>body</name>
+   </variable>
+</TestCaseEntity>
