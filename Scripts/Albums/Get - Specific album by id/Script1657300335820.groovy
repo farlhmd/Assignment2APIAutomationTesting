@@ -18,17 +18,38 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-response = WS.sendRequest(findTestObject('EP_Albums/Get Specific Album by Id'))
+WS.comment('To check all of 100 albums, use for loop (Variable declared) on Global Variables')
 
-WS.verifyResponseStatusCode(response, 200)
+for (int idLocal = 1; idLocal <= 100; idLocal++) {
+    GlobalVariable.id = idLocal
+WS.comment('The end point is declared as idLocal.')
+    response = WS.sendRequest(findTestObject('EP_Albums/Get Specific Album by Id'))
 
-def slurper = new JsonSlurper()
+    WS.verifyResponseStatusCode(response, 200)
 
-def result = slurper.parseText(response.getResponseBodyContent())
+    WS.comment('Define JSON Slurper to get data from JSON')
 
-for (int i = 0; i < result.size(); i++) {
-    WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
+    def slurper = new JsonSlurper()
 
-    WS.verifyElementPropertyValue(response, "[$i].userId", result[i].userId, FailureHandling.OPTIONAL)
+    def result = slurper.parseText(response.getResponseBodyContent())
+	userId = result.userId
+	
+	id = result.id
+	
+	title = result.title
+
+    WS.comment('Check if value from ID endpoint is equal with JSON Slurper')
+
+    WS.verifyElementPropertyValue(response, 'userId', userId, FailureHandling.OPTIONAL)
+
+    WS.verifyElementPropertyValue(response, 'id', id, FailureHandling.OPTIONAL)
+
+    WS.verifyElementPropertyValue(response, 'title', title, FailureHandling.OPTIONAL)
+
+	println('This data is verified: ')
+    println('Id: ' + id)
+
+    println('User Id :' + userId)
+
+    println('Title :' + title)
 }
-
