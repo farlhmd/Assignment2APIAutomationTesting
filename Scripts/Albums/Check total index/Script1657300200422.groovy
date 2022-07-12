@@ -28,7 +28,7 @@ def result = slurper.parseText(response.getResponseBodyContent())
 total = 0
 WS.comment('To check all available indexes of data')
 for(int i=0; i < result.size(); i++) {
-    WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
+    WS.verifyElementPropertyValue(response, "[$i].id", result[i].id, FailureHandling.OPTIONAL)
 	total++
 }
 if(total > 0) {
