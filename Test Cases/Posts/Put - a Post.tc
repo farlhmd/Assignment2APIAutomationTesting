@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Put - a Post</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8f8ba43-183b-41f3-8e3a-5a5cc82579c4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c8efce5e-c4c6-4003-8e0f-fcffff97e0cc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d05a3220-3b6f-499c-967a-c0166942526a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>37935e77-5998-4598-8fcc-4702d0d414ad</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7c340071-3227-41fe-b1db-e8f37a12d894</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>c8efce5e-c4c6-4003-8e0f-fcffff97e0cc</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>d05a3220-3b6f-499c-967a-c0166942526a</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Title'</defaultValue>
+      <description></description>
+      <id>37935e77-5998-4598-8fcc-4702d0d414ad</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Body'</defaultValue>
+      <description></description>
+      <id>7c340071-3227-41fe-b1db-e8f37a12d894</id>
+      <masked>false</masked>
+      <name>body</name>
+   </variable>
+</TestCaseEntity>
