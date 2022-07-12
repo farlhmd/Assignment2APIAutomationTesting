@@ -46,6 +46,15 @@ The end-points are:
 3. Run test from "Complete TS Collection"
 4. Enjoy other TS and TS Collection! 💪😌
    
-### Test(s)
+### Test Cases
 
-This test is divided into xx Test Scope:
+The test cases are devided by each endpoints:
+
+- Albums&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 7 Test Cases
+- Comments : Consist of 5 Test Cases
+- Photos&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 5 Test Cases
+- Posts&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 6 Test Cases
+- Todos&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 5 Test Cases
+- Users&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Consist of 8 Test Cases
+
+##### *Notes: These test cases are implementing loop to verify data from JSON Slurper
