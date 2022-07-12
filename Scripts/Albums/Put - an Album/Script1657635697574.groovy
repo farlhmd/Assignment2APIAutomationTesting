@@ -17,14 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('EP_Albums/Post an Album'))
+response = WS.sendRequest(findTestObject('EP_Albums/Put an Album by Id'))
 
-WS.verifyResponseStatusCode(response, 201, FailureHandling.OPTIONAL)
+WS.verifyResponseStatusCode(response, 200, FailureHandling.OPTIONAL)
 
-WS.comment('Verify if the response is equal to requested items')
+WS.comment('Verify if the response is equal to updated items')
 
 WS.verifyElementPropertyValue(response, 'userId', userId, FailureHandling.OPTIONAL)
-WS.verifyElementPropertyValue(response, 'id', id, FailureHandling.OPTIONAL)
-WS.verifyElementPropertyValue(response, 'title', title, FailureHandling.OPTIONAL)
 
+WS.verifyElementPropertyValue(response, 'id', id, FailureHandling.OPTIONAL)
+
+WS.verifyElementPropertyValue(response, 'title', title, FailureHandling.OPTIONAL)
 
