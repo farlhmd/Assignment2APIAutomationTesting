@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - all Todos from specific User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e357b2c6-724c-4d27-9a91-5d85106a3fb2</testCaseGuid>
+</TestCaseEntity>
