@@ -18,27 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
+response = WS.sendRequest(findTestObject('EP_Photos/Get all Photos'))
 
+def slurper = new JsonSlurper()
 
-WS.comment('To check all photos from 100 albums, use for loop (Variable declared) on Global Variables')
+WS.verifyResponseStatusCode(response, 200)
 
-// To shorten the validation procedure, I just test 10 albums instead of the total (100). Just modify the number on idLocal <= maxNumberYouWant to customize the total of the validation
-// if you want to check all the data (100 albums * 50 photos * 5 items = 25000 items to verify), go on. I already tested it and it takes about 30 minutes
-for (int idLocal = 1; idLocal <= 10; idLocal++) {
-	GlobalVariable.id = idLocal
-WS.comment('The end point is declared as idLocal.')
-	response = WS.sendRequest(findTestObject('EP_Albums/Get all photos from specific album'))
+def result = slurper.parseText(response.getResponseBodyContent())
 
-	WS.verifyResponseStatusCode(response, 200)
-	WS.comment('Define JSON Slurper to get data from JSON')
+total = 0
 
-	def slurper = new JsonSlurper()
-	def result = slurper.parseText(response.getResponseBodyContent())
-
-	WS.comment('Check if value from ID endpoint is equal with JSON Slurper')
-	
+WS.comment('To check all available indexes of data using JSON Slurper')
+// I just check 10 photos out of a total of 5000 to shorten the validation procedure.
 // for(int i=0; i < result.size(); i++) {
-	// I just check 10 photos out of a total of 50 to shorten the validation procedure.
 	// To check all data from the id, uncomment the code above. But if that is too much, use the code below instead (only 10 sample datas).
 for(int i=0; i < 10; i++) {
 
@@ -67,6 +59,7 @@ for(int i=0; i < 10; i++) {
 					
 						if (thumbnailUrlVerified == true) {
 							WS.comment("The item with Thumbnail URL $thumbnailUrl is valid")
+							total++
 						} else {
 							WS.comment("The item with Thumbnail Url: $thumbnailUrl is invalid")
 						} 
@@ -83,4 +76,6 @@ for(int i=0; i < 10; i++) {
 		WS.comment("The item with Id $id is invalid")
 	}
 }
-}
+
+WS.comment("Indexes verified: $total")
+

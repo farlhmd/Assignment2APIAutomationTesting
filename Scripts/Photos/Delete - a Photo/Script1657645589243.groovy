@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('EP_Comments/Delete a Comment by Id'))
+response = WS.sendRequest(findTestObject('EP_Photos/Delete a Photo by Id'))
 
-WS.comment('The valid response for deleting a Comment is 200')
+WS.comment('The valid response for deleting a Photo is 200')
 
 WS.verifyResponseStatusCode(response, 200)
 
