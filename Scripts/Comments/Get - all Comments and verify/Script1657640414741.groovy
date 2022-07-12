@@ -47,16 +47,26 @@ for (int i = 0; i < result.size(); i++) {
     WS.comment('Showing if the respond equal with the JSON Slurper')
 
     if (postIdVerified == true) {
+		
         WS.comment("The index value with Post Id $postId is verified")
-        total++
+		
 		if (idVerified == true) {
+			
 			WS.comment("The index value with Id $id is verified")
+			
 			if (nameVerified == true) {
+				
 				WS.comment("The index value with Name $name is verified")
+				
 				if (emailVerified == true) {
+					
 					WS.comment("The index value with Email $email is verified")
+					
 					if (bodyVerified == true) {
+						
 						WS.comment("The index value with Body $body is verified")
+						total++
+						
 					} else {
 						WS.comment("The index value with Body $body is invalid")
 					}
