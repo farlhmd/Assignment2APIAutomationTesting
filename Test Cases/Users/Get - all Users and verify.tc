@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - all Users and verify</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>356aeb39-7b03-4d5a-a7d6-2cf935c97a05</testCaseGuid>
+</TestCaseEntity>
