@@ -16,48 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
 
-response = WS.sendRequest(findTestObject('EP_Albums/Get all Albums'))
+response = WS.sendRequest(findTestObject('EP_Albums/Get Specific Album by Id'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.comment('To check the userId and id is equal to what it should')
+def slurper = new JsonSlurper()
 
-int i = 0
+def result = slurper.parseText(response.getResponseBodyContent())
 
-int max = 100
+for (int i = 0; i < result.size(); i++) {
+    WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
 
-int total = 0
-
-int userId = 1
-
-while (i < max) {
-    idVerified = WS.verifyElementPropertyValue(response, "[$i].id", i+1, FailureHandling.OPTIONAL)
-
-    userIdVerified = WS.verifyElementPropertyValue(response, "[$i].userId", userId, FailureHandling.OPTIONAL)
-
-    if (idVerified == true) {
-        WS.comment("Id value with index $i is verified")
-
-        if (userId == false) {
-            WS.comment("User Id value with index $i is invalid")
-        }
-		WS.comment("User Id value with index $i is verified")
-        i++
-
-        total = i
-
-        if ((i % 10) == 0) {
-			WS.comment("Each user has 10 albums, so after 10 albums, the user will be changed")
-            userId += 1
-        }
-    } else {
-        WS.comment("Id value with index $i is invalid")
-
-        total = i
-
-        i = max
-    }
+    WS.verifyElementPropertyValue(response, "[$i].userId", result[i].userId, FailureHandling.OPTIONAL)
 }
 
-WS.comment("Completed get all albums by id, The total is: $total")
