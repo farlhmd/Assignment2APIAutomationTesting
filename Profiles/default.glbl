@@ -9,4 +9,9 @@
       <initValue>'https://jsonplaceholder.typicode.com'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
