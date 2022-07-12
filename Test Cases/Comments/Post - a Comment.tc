@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Post - a Comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e094f2c0-1f03-44ec-a52e-a0bba09cb24c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54e651fe-3c96-4fb8-aacf-4f329a2edc33</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f3b86666-ac76-4e2f-95f1-579491bdcc41</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8191c64c-4285-4f6a-a64f-fd8222415d5d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bed65a39-8dd6-4fdf-872e-f0ce40bec8a4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>76e28f57-bc55-484a-8f79-1620df95a4fe</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>54e651fe-3c96-4fb8-aacf-4f329a2edc33</id>
+      <masked>false</masked>
+      <name>postId</name>
+   </variable>
+   <variable>
+      <defaultValue>'501'</defaultValue>
+      <description></description>
+      <id>f3b86666-ac76-4e2f-95f1-579491bdcc41</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is added Name'</defaultValue>
+      <description></description>
+      <id>8191c64c-4285-4f6a-a64f-fd8222415d5d</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is added Email'</defaultValue>
+      <description></description>
+      <id>bed65a39-8dd6-4fdf-872e-f0ce40bec8a4</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is added Body'</defaultValue>
+      <description></description>
+      <id>76e28f57-bc55-484a-8f79-1620df95a4fe</id>
+      <masked>false</masked>
+      <name>body</name>
+   </variable>
+</TestCaseEntity>
