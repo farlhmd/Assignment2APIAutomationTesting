@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-WS.comment('To check all of 100 albums, use for loop (Variable declared) on Global Variables')
+WS.comment('To change the total number of Albums to check, change the idLocal <= totalIdYouWant')
 
-for (int idLocal = 1; idLocal <= 100; idLocal++) {
+for (int idLocal = 1; idLocal <= 10; idLocal++) {
     GlobalVariable.id = idLocal
 WS.comment('The end point is declared as idLocal.')
     response = WS.sendRequest(findTestObject('EP_Albums/Get Specific Album by Id'))
