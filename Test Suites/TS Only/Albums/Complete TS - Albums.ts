@@ -31,5 +31,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Albums/Get - Specific album by id</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>31ccd019-f869-4a49-8917-c3db6381355f</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
