@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - Specific User by id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67425645-c15d-4bbd-a655-655f1efd7952</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3a1f8390-1598-4d99-992d-05c4e17db849</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>3a1f8390-1598-4d99-992d-05c4e17db849</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+</TestCaseEntity>
