@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Put - a Comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d2a1a55-6f38-40b3-84b6-281de12da478</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5cf25943-3777-416c-85e7-b938263c34d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bb84b532-7a73-41a8-b2d4-d8a9a5f64e47</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fa7e89a0-8c4b-4e66-a61c-655040982132</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7d8e2c4b-0086-4c87-92aa-cf81c37bfac7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9c1805cc-0df1-4560-bfc1-8794ddac5a16</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>5cf25943-3777-416c-85e7-b938263c34d4</id>
+      <masked>false</masked>
+      <name>postId</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>bb84b532-7a73-41a8-b2d4-d8a9a5f64e47</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Name'</defaultValue>
+      <description></description>
+      <id>fa7e89a0-8c4b-4e66-a61c-655040982132</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Email'</defaultValue>
+      <description></description>
+      <id>7d8e2c4b-0086-4c87-92aa-cf81c37bfac7</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Body'</defaultValue>
+      <description></description>
+      <id>9c1805cc-0df1-4560-bfc1-8794ddac5a16</id>
+      <masked>false</masked>
+      <name>body</name>
+   </variable>
+</TestCaseEntity>
