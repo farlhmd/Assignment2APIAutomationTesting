@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - Specific Photo by id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>15950bc2-a6e5-4df3-b40a-deedcd95f07b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>90f48e2f-472d-4ca8-b860-9cb6c38555c1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>90f48e2f-472d-4ca8-b860-9cb6c38555c1</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+</TestCaseEntity>
