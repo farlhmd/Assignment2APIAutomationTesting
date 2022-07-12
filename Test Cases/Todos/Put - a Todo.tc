@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Put - a Todo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7ee1c372-68af-4f7e-a2f6-020034b3fd2d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0bbf604a-9d21-4be6-8b38-51d27d7dce80</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>58507b27-ad51-47af-9412-eac18567a077</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>816ea159-8ccb-4313-a0dd-4a29b7375cc0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0a7f12a4-e4c6-48fe-adf0-735ffade198f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>0bbf604a-9d21-4be6-8b38-51d27d7dce80</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>58507b27-ad51-47af-9412-eac18567a077</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Title'</defaultValue>
+      <description></description>
+      <id>816ea159-8ccb-4313-a0dd-4a29b7375cc0</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>0a7f12a4-e4c6-48fe-adf0-735ffade198f</id>
+      <masked>false</masked>
+      <name>completed</name>
+   </variable>
+</TestCaseEntity>
