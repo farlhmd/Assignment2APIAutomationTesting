@@ -37,11 +37,25 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'10'</defaultValue>
       <description></description>
       <id>f6794d96-1c95-4a0b-acf1-ea66ff184d96</id>
       <masked>false</masked>
       <name>userId</name>
+   </variables>
+   <variables>
+      <defaultValue>'101'</defaultValue>
+      <description></description>
+      <id>de1c0420-a0ed-4262-8832-bc254640096b</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variables>
+   <variables>
+      <defaultValue>'This is new Album'</defaultValue>
+      <description></description>
+      <id>2988d29c-5a8f-4980-a00e-28e44121d554</id>
+      <masked>false</masked>
+      <name>title</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
