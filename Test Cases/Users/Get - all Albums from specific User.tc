@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - all Albums from specific User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f802245a-4425-4391-9cf8-9700ca34da4e</testCaseGuid>
+</TestCaseEntity>
