@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - Specific Todo by id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>347bb42e-ec2e-4ffe-b538-f27978931a0c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7c6342bd-af04-4b7f-8664-bd6659620f53</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>7c6342bd-af04-4b7f-8664-bd6659620f53</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+</TestCaseEntity>
