@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get - Specific Comment by id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6113970e-17c4-4add-bbf0-e6963f894110</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>319b48d9-c82b-4dfc-9879-4ecb77d8cc53</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>319b48d9-c82b-4dfc-9879-4ecb77d8cc53</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+</TestCaseEntity>
