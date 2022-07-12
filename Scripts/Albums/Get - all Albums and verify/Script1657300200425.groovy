@@ -26,6 +26,7 @@ def result = slurper.parseText(response.getResponseBodyContent())
 total = 0
 WS.comment('To check all available indexes of data using JSON Slurper')
 for(int i=0; i < result.size(); i++) {
+	
     WS.verifyElementPropertyValue(response, "[$i].id", i + 1, FailureHandling.OPTIONAL)
 	userIdVerified = WS.verifyElementPropertyValue(response, "[$i].userId", result[i].userId, FailureHandling.OPTIONAL)
 	
@@ -34,7 +35,7 @@ for(int i=0; i < result.size(); i++) {
 	titleVerified = WS.verifyElementPropertyValue(response, "[$i].title", result[i].title, FailureHandling.OPTIONAL)
 	
 	WS.comment('Showing if the respond equal with the JSON Slurper')
-	if ((userIdVerified && idVerified) && (titleVerified == true)) {
+	if ((userIdVerified && idVerified && titleVerified == true)) {
     WS.comment("The index value with id $i is verified")
 	total++
 	} else {

@@ -24,32 +24,30 @@ for (int idLocal = 1; idLocal <= 100; idLocal++) {
     GlobalVariable.id = idLocal
 WS.comment('The end point is declared as idLocal.')
     response = WS.sendRequest(findTestObject('EP_Albums/Get Specific Album by Id'))
-
     WS.verifyResponseStatusCode(response, 200)
 
     WS.comment('Define JSON Slurper to get data from JSON')
 
     def slurper = new JsonSlurper()
-
     def result = slurper.parseText(response.getResponseBodyContent())
-	userId = result.userId
 	
-	id = result.id
-	
+	userId = result.userId	
+	id = result.id	
 	title = result.title
 
     WS.comment('Check if value from ID endpoint is equal with JSON Slurper')
 
-    WS.verifyElementPropertyValue(response, 'userId', userId, FailureHandling.OPTIONAL)
+   userIdVerified = WS.verifyElementPropertyValue(response, 'userId', userId, FailureHandling.OPTIONAL)
+   idVerified = WS.verifyElementPropertyValue(response, 'id', id, FailureHandling.OPTIONAL)
+   titleVerified = WS.verifyElementPropertyValue(response, 'title', title, FailureHandling.OPTIONAL)
 
-    WS.verifyElementPropertyValue(response, 'id', id, FailureHandling.OPTIONAL)
-
-    WS.verifyElementPropertyValue(response, 'title', title, FailureHandling.OPTIONAL)
-
+   if(userIdVerified && idVerified && titleVerified == true) {
 	println('This data is verified: ')
-    println('Id: ' + id)
-
-    println('User Id :' + userId)
-
-    println('Title :' + title)
+	
+    WS.comment('Id: ' + id)
+    WS.comment('User Id :' + userId)
+    WS.comment('Title :' + title)
+   } else {
+	   WS.comment("Data value with id $id is invalid")
+   }
 }
