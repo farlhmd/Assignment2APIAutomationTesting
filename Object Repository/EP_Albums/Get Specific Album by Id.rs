@@ -15,7 +15,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.url}/albums/${id}</restUrl>
+   <restUrl>${GlobalVariable.url}/albums/${GlobalVariable.id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -25,9 +25,9 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'2'</defaultValue>
       <description></description>
-      <id>ca2ffcaf-046a-45e5-87df-ce40fdf689aa</id>
+      <id>01ef089d-ad67-45ec-8aac-91888aea28a6</id>
       <masked>false</masked>
       <name>id</name>
    </variables>
@@ -41,11 +41,13 @@ import com.kms.katalon.core.webservice.verification.WSResponseManager
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
+
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyElementPropertyValue(response, 'userId', '1')
 WS.verifyElementPropertyValue(response, 'id', '1')
-WS.verifyElementPropertyValue(response, 'title', 'quidem molestiae enim')</verificationScript>
+WS.verifyElementPropertyValue(response, 'title', 'quidem molestiae enim')
+WS.verifyElementPropertyValue(response, 'userId', '')</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
