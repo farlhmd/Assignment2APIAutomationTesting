@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Put - an Album</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>22c4551c-81d9-4083-bb43-ae2acb90668e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>14a0eb90-9583-48c3-a013-73d0e732f2c4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ee2a934b-4be9-4cc1-a90d-04de41ae16c1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7b30a7f8-99b5-4575-9c90-bb25bd35aa40</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>14a0eb90-9583-48c3-a013-73d0e732f2c4</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>ee2a934b-4be9-4cc1-a90d-04de41ae16c1</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is edited Album'</defaultValue>
+      <description></description>
+      <id>7b30a7f8-99b5-4575-9c90-bb25bd35aa40</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+</TestCaseEntity>
