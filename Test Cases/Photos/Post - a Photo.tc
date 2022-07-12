@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Post - a Photo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5ad8f8af-a08a-418a-b803-89fb9162adbd</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9d337694-fc19-4c0f-a755-ab8dc6168436</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>11a68565-cb4a-4d9b-a284-59745eabed9d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>79b088e2-b726-46c1-89cb-d90a1009ce1c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aede1311-a8c4-4027-96c3-6c8514ca1724</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ed51d384-d32e-46a7-9fee-9975d247256a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>9d337694-fc19-4c0f-a755-ab8dc6168436</id>
+      <masked>false</masked>
+      <name>albumId</name>
+   </variable>
+   <variable>
+      <defaultValue>'5001'</defaultValue>
+      <description></description>
+      <id>11a68565-cb4a-4d9b-a284-59745eabed9d</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is new Title'</defaultValue>
+      <description></description>
+      <id>79b088e2-b726-46c1-89cb-d90a1009ce1c</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is new URL'</defaultValue>
+      <description></description>
+      <id>aede1311-a8c4-4027-96c3-6c8514ca1724</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is new Thumbnail URL'</defaultValue>
+      <description></description>
+      <id>ed51d384-d32e-46a7-9fee-9975d247256a</id>
+      <masked>false</masked>
+      <name>thumbnailUrl</name>
+   </variable>
+</TestCaseEntity>
